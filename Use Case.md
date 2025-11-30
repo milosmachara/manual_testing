@@ -1,15 +1,29 @@
-# Use Case: UC-ALZA-001 – Prihlásenie používateľa
+# UC-ALZA-001 Prihlásenie používateľa
 
-**Aktér:**  
-Registrovaný používateľ
+## Vstupná podmienka
+Používateľ má otvorenú hlavnú stránku Alza.sk v internetovom prehliadači.
 
-**Cieľ:**  
-Získať prístup do svojho zákazníckeho účtu na Alza.sk
+## Aktéri
+- Používateľ (registrovaný zákazník)
 
-**Predpoklady:**  
-- Používateľ má existujúci účet  
-- Používateľ pozná svoje prihlasovacie údaje  
-- Používateľ má prístup na internet  
+## Základná postupnosť
+1. Používateľ klikne na tlačidlo **„Prihlásiť“** v hornej časti stránky.
+2. Systém zobrazí prihlasovací formulár s políčkami pre **e-mail/ID používateľa** a **heslo**.
+3. Používateľ zadá platný e-mail a heslo.
+4. Používateľ klikne na tlačidlo **„Prihlásiť“**.
+5. Systém overí prihlasovacie údaje:
+   - Ak sú údaje správne, používateľ je presmerovaný na svoj osobný účet / dashboard a zobrazuje sa jeho meno.
 
-**Spúšťacia udalosť:**  
-Používateľ klikne na tlačidlo „Prihlásiť“ na stránke Alza.sk
+## Alternatívna postupnosť 1 – nesprávne údaje
+1. Používateľ zadá nesprávny e-mail alebo heslo.
+2. Systém zobrazí chybovú správu: **„Nesprávne prihlasovacie údaje“**.
+3. Používateľ môže zvoliť možnosť **Obnoviť heslo** alebo opraviť údaje a skúsiť znova.
+
+## Alternatívna postupnosť 2 – prázdne polia
+1. Používateľ klikne na **„Prihlásiť“** bez vyplnenia e-mailu alebo hesla.
+2. Systém zobrazí validačnú správu: **„Prosím, vyplňte e-mail a heslo“**.
+
+## Poznámky
+- E-mail musí byť platne formátovaný (napr. `meno@domena.sk`).
+- Heslo musí spĺňať minimálne bezpečnostné pravidlá nastavené Alza.sk.
+- Pri 3 po sebe idúcich neúspešných pokusoch môže systém dočasne zablokovať prihlásenie.
