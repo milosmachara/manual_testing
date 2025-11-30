@@ -1,2 +1,8 @@
-# manual_testing
-Demo repository for manual testing of a web application.
+# Manual testing
+# Alza User Login
+Dokumentácia a testovacie prípady pre funkciu prihlasovania používateľa na Alza.sk.
+
+## Obsah
+- Use case prihlasovania používateľa
+- Testovacie scenáre a prípady
+
